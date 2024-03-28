@@ -10,8 +10,7 @@ conversion_unit = st.radio(
     "What unit would you like to convert to?",
     ["Celsius", "Fahrenheit", "Kelvin"],)
 
-if initial_unit == conversion_unit:
-    st.write('Weleedeewxxxeeeecome to Streamlit')
+
 
 if initial_unit == "Celsius":
         
@@ -32,5 +31,8 @@ elif initial_unit == "Kelvin":
             converted_temp = (float(temp) -273.15) * 1.8  + 32
     if conversion_unit == "Celsius":
             converted_temp = float(temp) - 273.15
-        
-st.write(f'''It is {str(int(converted_temp))} {conversion_unit}''')
+
+if initial_unit == conversion_unit:
+    st.write('That's the same unit.')
+else:
+    st.write(f'''It is {str(int(converted_temp))} {conversion_unit}.''')
