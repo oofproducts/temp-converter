@@ -2,4 +2,4 @@ import streamlit as st
 
 
 
-st.write('Weldcome to Streamlit')
+st.write('Weleedcome to Streamlit')
