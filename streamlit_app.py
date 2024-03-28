@@ -15,23 +15,22 @@ if initial_unit == conversion_unit:
 
 if initial_unit == "Celsius":
         
-        if conversion_unit == "Fahrenheit":
+    if conversion_unit == "Fahrenheit":
             converted_temp = (float(temp) * 9/5) + 32
-        if conversion_unit == "Kelvin":
+    if conversion_unit == "Kelvin":
             converted_temp = float(temp) + 273.15 
         
-    elif initial_unit == "Fahrenheit":
-        
-        if conversion_unit == "Celsius":
+elif initial_unit == "Fahrenheit":
+    if conversion_unit == "Celsius":
             converted_temp = (float(temp) - 32) * 5/9
-        if conversion_unit == "Kelvin":
+    if conversion_unit == "Kelvin":
             converted_temp = (float(temp) - 32) * 5/9 + 273.15
         
-    elif initial_unit == "Kelvin":
+elif initial_unit == "Kelvin":
         
-        if conversion_unit == "Fahrenheit":
+    if conversion_unit == "Fahrenheit":
             converted_temp = (float(temp) -273.15) * 1.8  + 32
-        if conversion_unit == "Celsius":
+    if conversion_unit == "Celsius":
             converted_temp = float(temp) - 273.15
         
-    st.write(f'''It is {str(int(converted_temp))} {conversion_unit}''')
+st.write(f'''It is {str(int(converted_temp))} {conversion_unit}''')
