@@ -12,4 +12,6 @@ conversion_unit = st.radio(
     "What unit would you like to convert to?",
     ["Celsius", "Fahrenheit", "Kelvin"],)
 
-st.write('Weleedeewxxxeeeecome to Streamlit')
+if initial_unit == conversion_unit:
+    st.write('Weleedeewxxxeeeecome to Streamlit')
+
