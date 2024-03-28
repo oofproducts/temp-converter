@@ -1,3 +1,3 @@
 import streamlit as st
 
-st.write('Web blcome to Streamlit')
+st.write(':balloon: to Streamlit')
