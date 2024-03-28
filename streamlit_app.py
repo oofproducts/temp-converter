@@ -2,9 +2,8 @@ import streamlit as st
 
 illegal_temperature = False
 
-genre = st.radio(
-    "What's your favorite movie genre",
-    [":rainbow[Comedy]", "***Drama***", "Documentary :movie_camera:"],
-    captions = ["Laugh out loud.", "Get the popcorn.", "Never stop learning."])
+initial_unit = st.radio(
+    "What is the starting unit of your temperature?",
+    ["Celsius", "Fahrenheit", "Kelvin"],
 
-st.write('Weleedeeeeecome to Streamlit')
+st.write('Weleedeewxxxeeeecome to Streamlit')
