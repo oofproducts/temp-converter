@@ -33,6 +33,6 @@ elif initial_unit == "Kelvin":
             converted_temp = float(temp) - 273.15
 
 if initial_unit == conversion_unit:
-    st.write("That's the esame unit.")
+    st.write("That's the same unit.")
 else:
     st.write(f'''It is {str(int(converted_temp))} {conversion_unit}.''')
